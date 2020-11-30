@@ -25,6 +25,11 @@ function StatisticsSection({ items }) {
   );
 }
 
+Statistics.propTypes = {
+  label: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired,
+};
+
 StatisticsSection.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
@@ -34,3 +39,7 @@ StatisticsSection.propTypes = {
 };
 
 export default StatisticsSection
+
+
+
+
