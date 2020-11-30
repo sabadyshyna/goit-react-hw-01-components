@@ -12,7 +12,7 @@ const Statistics = ({label, percentage}) => {
 function StatisticsSection({ items }) {
   return (
   
-    <ul>
+    <ul className="stat-list">
       {items.map(item => ( 
         <Statistics
             key={item.id}

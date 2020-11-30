@@ -1,18 +1,18 @@
 import PropTypes from 'prop-types';
 
-const Friend = ({}) => {
+const Friend = ({avatar, name, isOnline}) => {
   return (
-    <li class="item">
-    <span class="status"></span>
-    <img class="avatar" src="{avatar}" alt="{name}" width="48" />
-    <p class="name">{name}</p>
+    <li className="item">
+    <span className="status"></span>
+    <img className="avatar" src={avatar} alt="{name}" width="48" />
+    <p className="name">{name}</p>
     </li>
   )
 }
 
 function FriendList({ items }) {
   return (
-    <ul>
+    <ul className="friend-list">
       {items.map(item => ( 
         <Friend
             key={item.id}
@@ -25,10 +25,15 @@ function FriendList({ items }) {
   );
 }
 
-StatisticsSection.propTypes = {
+Friend.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+};
+
+FriendList.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
     }),
   ),
 };

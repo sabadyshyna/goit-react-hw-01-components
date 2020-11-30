@@ -1,10 +1,11 @@
 import Profile from './copmponents/Profile/Profile';
 import StatisticsSection from './copmponents/Statistics/StatisticsSection';
 import StatisticsContainer from './copmponents/Statistics/StatisticsContainer'
-// import FriendList from './copmponents/FriendList/FriendList';
+import FriendList from './copmponents/FriendList/FriendList';
 // import TransactionHistory from './copmponents/TransactionHistory/TransactionHistory';
 import user from './user.json'
 import statisticalData from './statistical-data.json'
+import friends from './friends.json'
 
 
 
@@ -24,6 +25,8 @@ export default function App() {
       <StatisticsContainer title="Upload stats">
         <StatisticsSection items={statisticalData} />
       </StatisticsContainer>
+
+      <FriendList items={friends}/>
 
     </div>
   );
