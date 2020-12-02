@@ -23,19 +23,6 @@
   padding: 10px;
 }
 
-.rowBody {
-  display: flex;
-  align-items: center;
-  /* font-size: 14px; */
-}
-
 .rowBody:nth-child(2n + 1) {
   background-color: rgba(96, 138, 148, 0.1);
-}
-
-.dataBody {
-  width: 130px;
-  padding: 10px;
-  text-align: center;
-  cursor: pointer;
 }

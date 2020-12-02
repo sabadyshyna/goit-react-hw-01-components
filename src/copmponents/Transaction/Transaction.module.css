@@ -1,0 +1,12 @@
+.rowBody {
+  display: flex;
+  align-items: center;
+  /* font-size: 14px; */
+}
+
+.dataBody {
+  width: 130px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}

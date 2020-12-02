@@ -1,15 +1,6 @@
 import PropTypes from 'prop-types'
 import s from '../TransactionHistory/TransactionHistory.module.css'
-
-const Transaction = ({type, amount, currency}) => {
-  return (
-    <tr className={s.rowBody}>
-        <td className={s.dataBody}>{type}</td>
-        <td className={s.dataBody}>{amount}</td>
-        <td className={s.dataBody}>{currency}</td>
-    </tr>
-  )
-}
+import Transaction from '../Transaction/Transaction'
 
 function TransactionsHistory({ items }) {
   return (
@@ -35,18 +26,13 @@ function TransactionsHistory({ items }) {
   )
 }
 
-Transaction.propTypes = {
-  type: PropTypes.string.isRequired,
-  amount: PropTypes.string.isRequired,
-  currency: PropTypes.string.isRequired,
-};
 
 TransactionsHistory.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
     }),
-  ),
+  ).isRequired
 };
 
 export default TransactionsHistory
