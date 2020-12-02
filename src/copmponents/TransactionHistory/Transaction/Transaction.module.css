@@ -1,7 +1,6 @@
 .rowBody {
   display: flex;
   align-items: center;
-  /* font-size: 14px; */
 }
 
 .dataBody {
@@ -9,4 +8,8 @@
   padding: 10px;
   text-align: center;
   cursor: pointer;
+}
+
+.rowBody:nth-child(2n + 1) {
+  background-color: rgba(96, 138, 148, 0.1);
 }

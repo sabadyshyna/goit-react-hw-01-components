@@ -22,7 +22,3 @@
   width: 130px;
   padding: 10px;
 }
-
-.rowBody:nth-child(2n + 1) {
-  background-color: rgba(96, 138, 148, 0.1);
-}
